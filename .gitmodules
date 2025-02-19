@@ -1,0 +1,3 @@
+[submodule "vendor/ds1302-rtc-pico"]
+	path = vendor/ds1302-rtc-pico
+	url = git@github.com:perkun/ds1302-rtc-pico.git
