@@ -2,4 +2,4 @@
 
 A clock using ds1302 RTC external, battery powered clock and small SSD1306 OLED display
 
-![](img/board.png)
+![board](./img/board.jpg)
