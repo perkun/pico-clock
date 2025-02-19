@@ -1,3 +1,6 @@
 [submodule "vendor/ds1302-rtc-pico"]
 	path = vendor/ds1302-rtc-pico
 	url = git@github.com:perkun/ds1302-rtc-pico.git
+[submodule "vendor/SSD1306_OLED_PICO"]
+	path = vendor/SSD1306_OLED_PICO
+	url = git@github.com:perkun/SSD1306_OLED_PICO.git
