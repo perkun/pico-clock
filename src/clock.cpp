@@ -26,8 +26,6 @@ void SetupScreen(void);
 void UpdateScreen(const char *);
 void EndScreen(void);
 
-// ======================= Main ===================
-//
 int main()
 {
     DS1302::Clock clock(PIN_RST, PIN_CLK, PIN_DATA);
@@ -40,7 +38,6 @@ int main()
     }
     EndScreen();
 }
-// ======================= End of main  ===================
 
 // ===================== Function Space =====================
 void SetupScreen()

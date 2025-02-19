@@ -30,16 +30,16 @@ target_sources(${PROJECT_NAME} PRIVATE ${SSD1306_OLED_PICO_SRC_FILES})
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${PROJECT_SOURCE_DIR}/src
     ${PROJECT_SOURCE_DIR}/vendor/SSD1306_OLED_PICO/include
-    ${PROJECT_SOURCE_DIR}/vendor/ds1302_rtc/include
+    ${PROJECT_SOURCE_DIR}/vendor/ds1302-rtc-pico/include
 )
 
 add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/SSD1306_OLED_PICO)
-add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/ds1302_rtc)
+add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/ds1302-rtc-pico)
 
 # target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/vendor/SSD1306_OLED_PICO/include)
 
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(${PROJECT_NAME} pico_stdlib hardware_i2c ssd1306_oled_pico ds1302_rtc)
+target_link_libraries(${PROJECT_NAME} pico_stdlib hardware_i2c ssd1306_oled_pico ds1302-rtc-pico)
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)
 pico_enable_stdio_uart(${PROJECT_NAME} 0)
